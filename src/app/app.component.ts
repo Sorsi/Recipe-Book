@@ -14,7 +14,6 @@ export class AppComponent {
   }
 
   onNavigate(feature: string) {
-    console.log('feature ==> ',  feature);
     this.loadedFeature = feature;
     
   }

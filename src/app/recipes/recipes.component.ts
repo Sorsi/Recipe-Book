@@ -9,7 +9,13 @@ import { Recipe } from './recipe.model';
 export class RecipesComponent implements OnInit {
   selectedRecipe: Recipe;
 
-  constructor() { }
+  constructor() {
+    this.selectedRecipe = {
+      name: '',
+      description: '',
+      imagePath: '',
+    }
+   }
 
   ngOnInit(): void {
   }

@@ -10,7 +10,13 @@ export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
   @Output() recipeSelected = new EventEmitter<void>();
 
-  constructor() { }
+  constructor() {
+    this.recipe = {
+      name: '',
+      description: '',
+      imagePath: '',
+    }
+   }
 
   ngOnInit(): void {
   }

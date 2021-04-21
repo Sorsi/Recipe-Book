@@ -8,14 +8,9 @@ import { RecipeService } from '../../recipe.service';
   styleUrls: ['./recipe-item.component.css']
 })
 export class RecipeItemComponent implements OnInit {
-  @Input() recipe: Recipe;
+  @Input() recipe!: Recipe;
 
   constructor(private recipeService: RecipeService) {
-    this.recipe = {
-      name: '',
-      description: '',
-      imagePath: '',
-    }
    }
 
   ngOnInit(): void {

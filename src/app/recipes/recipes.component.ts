@@ -9,15 +9,16 @@ import { RecipeService } from './recipe.service';
   providers: [RecipeService]
 })
 export class RecipesComponent implements OnInit {
-  selectedRecipe: Recipe;
+  selectedRecipe!: Recipe;
 
   constructor(private recipeService: RecipeService) {
-    this.selectedRecipe = {
+    /* this.selectedRecipe = {
       name: '',
       description: '',
       imagePath: '',
-    }
-   }
+      ingredients: [],
+    } */
+  }
 
   ngOnInit(): void {
     this.recipeService.recipeSelected
